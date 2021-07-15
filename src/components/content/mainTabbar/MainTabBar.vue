@@ -1,5 +1,5 @@
 <template>
-    <tab-bar>
+    <tab-bar class="tab-bar">
         <tab-bar-item path="/home" activeColor="#ff8198">
             <img slot="item-icon" src="~assets/img/tabbar/home.svg" alt="">
             <img slot="item-icon-active" src="~assets/img/tabbar/home_active.svg" alt="">
@@ -34,5 +34,7 @@ import TabBarItem from 'components/common/tabbar/TabBarItem.vue'
     }
 </script>
 <style scoped>
-
+.tab-bar{
+    z-index: 9;
+}
 </style>
